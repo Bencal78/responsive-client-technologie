@@ -8,9 +8,11 @@ class Clock extends Component {
 
   componentDidMount() {
     this.timerID = setInterval(() => {
-    this.setState({
-    date: new Date()
-    });
+      if(this.props.run){
+        this.setState({
+          date: new Date()
+        });
+      }
     }, 1000);
   }
 
@@ -18,12 +20,24 @@ class Clock extends Component {
     clearInterval(this.timerID);
   }
 
-  render() {
+  displayHour(){
     return (
       <div>
-      {this.state.date.toLocaleTimeString()}
+        {this.state.date.toLocaleTimeString()}
       </div>
     );
+  }
+
+  displayMessage() {
+    return (
+      <div>
+        Clock is stopped
+      </div>
+    );
+  }
+
+  render() {
+   return this.props.run? this.displayHour() : this.displayMessage();
   }
 }
 export default Clock;
