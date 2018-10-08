@@ -4,8 +4,6 @@ class Chat extends Component {
   constructor(props) {
     super(props);
     this.state = { chat: '' }
-    this.handleChange = this.handleChange.bind(this);
-    this.handleSend = this.handleSend.bind(this);
   }
 
   handleChange(event) {
@@ -20,8 +18,12 @@ class Chat extends Component {
   }
 
   displayChat() {
-    let chat = this.props.display.map((item) => {
-      return (<p>{item}</p>);
+    let chat = this.props.display.map((item, index) => {
+      return (
+        <li key={index} style={{listStyleType: "none"}}>
+          <p>{item}</p>
+        </li>
+      );
     });
     return (<div id="display">{chat}</div>);
   }
@@ -31,9 +33,9 @@ class Chat extends Component {
       <div>
         { this.displayChat() }
         <div>
-          <input type="text" name="chat" onChange={this.handleChange}
+          <input type="text" name="chat" onChange={(e) => this.handleChange(e)}
             value={this.state.chat} />
-          <button onClick={this.handleSend}>Envoyer</button>
+          <button onClick={(e) => this.handleSend(e)}>Envoyer</button>
         </div>
       </div>
     );
