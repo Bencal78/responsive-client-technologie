@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class Maintenance extends Component {
+class Index extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -20,4 +20,4 @@ class Maintenance extends Component {
     );
   }
 }
-export default Maintenance;
+export default Index;

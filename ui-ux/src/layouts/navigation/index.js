@@ -6,12 +6,10 @@ import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
-import SendIcon from '@material-ui/icons/Send';
 import AttractionIcon from '@material-ui/icons/ChildCare';
 import MaintenanceIcon from '@material-ui/icons/Build';
 import BatimentIcon from '@material-ui/icons/Business';
 import ProfilIcon from '@material-ui/icons/Person';
-import ProjectIcon from '@material-ui/icons/Folder';
 import { withRouter } from 'react-router-dom';
 
 class Navigation extends React.Component {

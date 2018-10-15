@@ -9,23 +9,25 @@ import { connect } from 'react-redux';
 import { changeIsMenuOpen } from '../../actions';
 import { withRouter } from 'react-router-dom';
 
-const styles = {
-    root: {
-        width: '100%',
-        backgroundColor:'#fafafa',
-        display: 'flex',
-        flexDirection: 'row',
-        alignItems: 'center',
-        justifyContent: 'space-between',
-        color: '#222'
-    },
+const styles = (theme) => ({
+        root: {
+            width: '100%',
+            backgroundColor:'#fafafa',
+            display: 'flex',
+            flexDirection: 'row',
+            alignItems: 'center',
+            justifyContent: 'space-between',
+            color: '#222'
+        },
 
-    button: {
-        color: '#222',
-        marginRight:'5px',
-        flex: 1
-    },
-};
+        button: {
+            color: '#222',
+            marginRight:'5px',
+            flex: 1
+        },
+    }
+)
+
 
 class Header extends React.Component {
 
