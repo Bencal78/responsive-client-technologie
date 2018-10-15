@@ -4,10 +4,10 @@ class Attraction extends Component {
   constructor(props) {
     super(props);
     this.state = {
-       id = '',
-       name = '',
-       date = null,
-       price = 0
+       id : '',
+       name : '',
+       date : null,
+       price : 0
      }
   }
 
