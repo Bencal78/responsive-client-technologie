@@ -4,12 +4,12 @@ class Personnel extends Component {
   constructor(props) {
     super(props);
     this.state = {
-       id = '',
-       lastname = '',
-       firstname = '',
-       age = 0,
-       job = '',
-       salary = 0
+       id : '',
+       lastname : '',
+       firstname : '',
+       age : 0,
+       job : '',
+       salary : 0
      }
   }
 
