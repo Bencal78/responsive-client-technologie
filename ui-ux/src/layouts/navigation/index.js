@@ -34,7 +34,7 @@ class Navigation extends React.Component {
                 onClose={this.handleClose}
             >
                 <List>
-                  <ListItem button onClick={() => this.handleClick('Attraction')}>
+                  <ListItem button onClick={() => this.handleClick('attraction')}>
                       <ListItemIcon>
                           <AttractionIcon/>
                       </ListItemIcon>
@@ -43,7 +43,7 @@ class Navigation extends React.Component {
                           primary="Attraction"
                       />
                   </ListItem>
-                  <ListItem button onClick={() => this.handleClick('Batiments')}>
+                  <ListItem button onClick={() => this.handleClick('batiments')}>
                       <ListItemIcon>
                           <BatimentIcon/>
                       </ListItemIcon>
@@ -52,7 +52,7 @@ class Navigation extends React.Component {
                           primary="Batiments"
                       />
                   </ListItem>
-                  <ListItem button onClick={() => this.handleClick('Personnel')}>
+                  <ListItem button onClick={() => this.handleClick('personnel')}>
                       <ListItemIcon>
                           <ProfilIcon/>
                       </ListItemIcon>
@@ -61,7 +61,7 @@ class Navigation extends React.Component {
                           primary="Personnel"
                       />
                   </ListItem>
-                  <ListItem button onClick={() => this.handleClick('Maintenance')}>
+                  <ListItem button onClick={() => this.handleClick('maintenance')}>
                       <ListItemIcon>
                           <MaintenanceIcon/>
                       </ListItemIcon>
@@ -70,35 +70,7 @@ class Navigation extends React.Component {
                           primary="Maintenance"
                       />
                   </ListItem>
-                    <ListItem button onClick={() => this.handleClick('profil')}>
-                        <ListItemIcon>
-                            <ProfilIcon/>
-                        </ListItemIcon>
-                        <ListItemText
-                            inset
-                            primary="Profil"
-                        />
-                    </ListItem>
-                    <ListItem button onClick={() => this.handleClick('project')}>
-                        <ListItemIcon>
-                            <ProjectIcon/>
-                        </ListItemIcon>
-                        <ListItemText
-                            inset
-                            primary="Project"
-                        />
-                    </ListItem>
-                    <ListItem button onClick={() => this.handleClick('contact')}>
-                        <ListItemIcon>
-                            <SendIcon/>
-                        </ListItemIcon>
-                        <ListItemText
-                            inset
-                            primary="Send Mail"
-                        />
-                    </ListItem>
                 </List>
-
             </Drawer>
         )
     }
