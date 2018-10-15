@@ -1,12 +1,15 @@
 import React, { Component } from 'react';
 
-class Batiments extends Component {
+class Index extends Component {
   constructor(props) {
     super(props);
     this.state = {
        id : '',
-       name : '',
-       date : null
+       lastname : '',
+       firstname : '',
+       age : 0,
+       job : '',
+       salary : 0
      }
   }
 
@@ -18,4 +21,4 @@ class Batiments extends Component {
     );
   }
 }
-export default Batiments;
+export default Index;

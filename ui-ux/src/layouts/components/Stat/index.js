@@ -8,8 +8,8 @@ const styles = {
     }
 }
 
-class Stat extends Component {
-  /*constructor(props) {
+class Index extends Component {
+  constructor(props) {
     super(props);
     this.state = {
        id: '',
@@ -17,14 +17,7 @@ class Stat extends Component {
        visitor_number:0,
        recipe:0
      }
-  }*/
-
-  state = {
-      id: '',
-      date: null,
-      visitor_number:0,
-      recipe:0
-  };
+  }
 
   componentDidMount = () => {
       console.warn('lknfqsdnmksqndfkjqnsd')
@@ -40,4 +33,4 @@ class Stat extends Component {
       );
   }
 }
-export default withStyles(styles)(Stat);
+export default withStyles(styles)(Index);
